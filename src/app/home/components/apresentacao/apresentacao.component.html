@@ -1,1 +1,59 @@
-<p>apresentacao works!</p>
+<div class="introduction-container">
+  <div>
+    <h1>
+      <span>Prazer,</span>
+      <span>Eduardo Lopes</span>
+    </h1>
+    <h3>Desenvolvedor Web</h3>
+  </div>
+  <div>
+    <img
+      src="../../../../assets/foto-perfil.jpeg"
+      alt="Foto de perfil do Desenvolvedor"
+    />
+  </div>
+  <div class="contact-btns">
+    <nav class="social-medias">
+      <a
+        href=""
+        class="media-icons"
+        (click)="
+          animarIcone(
+            $event,
+            'fa-bounce',
+            'https://www.linkedin.com/in/carlos-eduardo-lopes-bezerra/'
+          )
+        "
+      >
+        <i class="fa-brands fa-linkedin fa-3x"></i>
+      </a>
+      <a
+        href=""
+        class="media-icons"
+        (click)="
+          animarIcone($event, 'fa-bounce', 'https://github.com/CaduLopes87')
+        "
+      >
+        <i class="fa-brands fa-square-github fa-3x"></i>
+      </a>
+    </nav>
+    <div class="action-btns">
+      <button class="btn email-btn">Entre em Contato</button>
+      <button id="cv-btn" class="btn cv-btn">
+        <a
+          href=""
+          (click)="
+            animarBotao(
+              $event,
+              'cv-btn',
+              'fa-bounce',
+              '../../../../assets/curriculum.pdf'
+            )
+          "
+        >
+          Baixe o CV</a
+        >
+      </button>
+    </div>
+  </div>
+</div>
