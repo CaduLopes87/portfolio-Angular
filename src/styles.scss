@@ -1,6 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --text-primary: white;
+  --text-secondary: #cc0000;
+
+  --primary-color: #cc0000;
+  --secondary-color: #5f0000;
+  --tertiary-color: #61dafb;
+  --quaternary-color: #3d3d3d;
+
+  --primary-gradient-color: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  --bg-primary-color: black;
+  --bg-secondary-color: white;
+  --bg-gradient-color: linear-gradient(15deg, rgb(96, 0, 0), black 50%);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
