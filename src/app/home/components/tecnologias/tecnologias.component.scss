@@ -1,0 +1,86 @@
+.tecnologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-primary);
+
+  margin-bottom: 64px;
+
+  .tec-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    max-width: 80%;
+
+    margin-top: 16px;
+    overflow: auto;
+
+    .box-tec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 178px;
+      margin: 16px;
+      padding: 8px;
+      border-radius: 16px 16px 0 0;
+      border-bottom: 16px solid var(--secondary-color);
+      background-color: var(--primary-color);
+
+      i {
+        font-size: 76px;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 4px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    text-align: start;
+
+    max-width: 60vw;
+    font-size: 1.2rem;
+
+    .title-line {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .title {
+      margin: 0sz;
+    }
+
+    .line {
+      margin-left: 32px;
+      height: 1px;
+
+      width: 60%;
+      background-color: var(--tertiary-color);
+    }
+
+    .tec-container {
+      align-self: flex-end;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      max-width: 1000px;
+      max-height: 532px;
+
+      padding: 0;
+
+      .box-tec:hover {
+        scale: 0.95;
+      }
+    }
+  }
+}

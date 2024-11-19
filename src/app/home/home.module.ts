@@ -6,9 +6,10 @@ import { NgxParticlesModule } from '@tsparticles/angular';
 import { HeaderComponent } from './components/header/header.component';
 import { ApresentacaoComponent } from './components/apresentacao/apresentacao.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 
 @NgModule({
-  declarations: [BackgroungParticlesComponent, HomeComponent, HeaderComponent, ApresentacaoComponent, SobreComponent],
+  declarations: [BackgroungParticlesComponent, HomeComponent, HeaderComponent, ApresentacaoComponent, SobreComponent, TecnologiasComponent],
   imports: [
     CommonModule,
 
