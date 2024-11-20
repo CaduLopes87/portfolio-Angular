@@ -4,33 +4,17 @@
     <div class="line"></div>
   </div>
   <div class="tec-container">
-    <div class="angular-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-      <i class="fa-brands fa-angular" (click)="animarComponente($event, 'fa-flip')"></i>
-      <span>Angular</span>
-    </div>
-    <div class="react-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-      <i class="fa-brands fa-react" (click)="animarComponente($event, 'fa-spin')"></i>
-      <span>REACT</span>
-    </div>
-  <div class="javascript-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-    <i class="fa-brands fa-js" (click)="animarComponente($event, 'fa-fade')"></i>
-    <span>JAVASCRIPT</span>
-  </div>
-  <div class="html-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-    <i class="fa-brands fa-html5" (click)="animarComponente($event, 'fa-fade')"></i>
-    <span>HTML</span>
-  </div>
-  <div class="css-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-    <i class="fa-brands fa-css3-alt" (click)="animarComponente($event, 'fa-fade')"></i>
-    <span>CSS</span>
-  </div>
-  <div class="sass-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-    <i class="fa-brands fa-sass" (click)="animarComponente($event, 'fa-beat-fade')"></i>
-    <span>SASS</span>
-  </div>
-  <div class="node-tec box-tec" (click)="animarComponente($event, 'fa-bounce')">
-    <i class="fa-brands fa-node" (click)="animarComponente($event, 'fa-flip')"></i>
-    <span>NODEJS</span>
-  </div>
+    @for (tecnologia of listaTecnologias; track $index) {
+    <article
+      class="box-tec"
+      (click)="animarComponente($event, 'fa-bounce')"
+    >
+      <i
+        [ngClass]="'fa-brands ' + tecnologia.fa_icone"
+        (click)="animarComponente($event, tecnologia.fa_classe_animacao)"
+      ></i>
+      <span> {{ tecnologia.nome }} </span>
+    </article>
+    }
   </div>
 </div>
