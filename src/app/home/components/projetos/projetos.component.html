@@ -4,64 +4,65 @@
     <h2>PROJETOS</h2>
     <div class="line-R"></div>
   </div>
-  <div class="projects-section">
-    <h4>Profissionais</h4>
-    <div class="projects-container">
-      @for (projeto of listaProjetos.profissionais; track $index) {
-      <article class="project-card">
-        <img
-          [src]="projeto.src"
-          [alt]="projeto.alt"
-        />
+  <section class="projects-section">
+    <section>
+      <h4>Profissionais</h4>
+      <div class="projects-container">
+        @for (projeto of listaProjetos.profissionais; track $index) {
+        <article class="project-card">
+          <img [src]="projeto.src" [alt]="projeto.alt" />
 
-        <div class="overlay">
-          <span>{{ projeto.nome }}</span>
-        </div>
+          <div class="overlay">
+            <span>{{ projeto.nome }}</span>
+          </div>
 
-        <div class="buttons-bar">
-          <a [href]="projeto.github_Link" target="_blank" class="bar-btn">
-            <i class="fa-brands fa-square-github fa-3x"></i>
-          </a>
-          <a
-            [href]="projeto.projeto_Link"
-            target="_blank"
-            class="btn bar-btn access-btn"
-            >Acesse</a
-          >
-        </div>
-      </article>
-      }
-    </div>
+          <div class="buttons-bar">
+            <a [href]="projeto.github_Link" target="_blank" class="bar-btn">
+              <i class="fa-brands fa-square-github fa-3x"></i>
+            </a>
+            <a
+              [href]="projeto.projeto_Link"
+              target="_blank"
+              class="btn bar-btn access-btn"
+              >Acesse</a
+            >
+          </div>
+        </article>
+        }
+      </div>
+    </section>
 
-    <h4>Pessoais</h4>
-    <div class="projects-box projects-container">
-      @for (projeto of listaProjetos.pessoais; track $index) {
-      <article class="project-card">
-        <img
-          [src]="projeto.src"
-          [alt]="projeto.alt"
-          width="{250}"
-          height="{164}"
-          priority
-        />
+    <section>
+      <h4>Pessoais</h4>
+      <div class="projects-box projects-container">
+        @for (projeto of listaProjetos.pessoais; track $index) {
+        <article class="project-card">
+          <img
+            [src]="projeto.src"
+            [alt]="projeto.alt"
+            width="{250}"
+            height="{164}"
+            priority
+          />
 
-        <div class="overlay">
-          <span>{{ projeto.nome }}</span>
-        </div>
+          <div class="overlay">
+            <span>{{ projeto.nome }}</span>
+          </div>
 
-        <div class="buttons-bar">
-          <a [href]="projeto.github_Link" target="_blank" class="bar-btn">
-            <i class="fa-brands fa-square-github fa-3x"></i>
-          </a>
-          <a
-            [href]="projeto.projeto_Link"
-            target="_blank"
-            class="btn bar-btn access-btn"
-            >Acesse</a
-          >
-        </div>
-      </article>
-      }
-    </div>
-  </div>
+          <div class="buttons-bar">
+            <a [href]="projeto.github_Link" target="_blank" class="bar-btn">
+              <i class="fa-brands fa-square-github fa-3x"></i>
+            </a>
+            <a
+              [href]="projeto.projeto_Link"
+              target="_blank"
+              class="btn bar-btn access-btn"
+              >Acesse</a
+            >
+          </div>
+        </article>
+        }
+      </div>
+    </section>
+  </section>
 </div>

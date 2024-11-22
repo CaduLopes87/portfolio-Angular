@@ -9,6 +9,8 @@
   // margin-bottom: 64px;
 
   .projects-section {
+    display: flex;
+    flex-direction: column;
     padding-top: 32px;
   }
 
@@ -24,9 +26,9 @@
     overflow: auto;
 
     width: 80vw;
-    height: auto;
+    height: 258px;
 
-    margin-bottom: 32px;
+    padding-top: 12px;
   }
 
   .project-card {
@@ -35,10 +37,7 @@
 
     position: relative;
 
-    margin: 32px;
-
-    // transform: translateX(0) scale(1);
-    // transition: transform 0.3s ease-in-out;
+    margin: 0 16px;
 
     border-bottom: 4px solid var(--primary-color);
 
@@ -85,7 +84,6 @@
       opacity: 0;
       transition: opacity 0.1s ease;
 
-      // background-color: var(--quaternary-color);
       border-top: 3px solid var(--primary-color);
 
       .bar-btn {
@@ -130,12 +128,10 @@
 
   .project-card:hover,
   .project-card:focus {
-    // transition: transform 0.5s ease-in-out;
     transform: scale(1.1);
 
     border: 2px solid var(--text-primary);
     border-radius: 32px 0 0 0;
-    // transition: border 0.2s ease;
 
     .overlay {
       display: none;
@@ -189,6 +185,14 @@
 
       width: 75vw;
       height: auto;
+      min-height: 280px;
+
+      padding-top: 0;
+      padding-left: 4px;
+    }
+
+    .project-card {
+      margin: 24px;
     }
 
     .project-card:hover {
