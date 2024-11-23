@@ -8,6 +8,7 @@ import { ApresentacaoComponent } from './components/apresentacao/apresentacao.co
 import { SobreComponent } from './components/sobre/sobre.component';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
+import { ContatosComponent } from './components/contatos/contatos.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
     SobreComponent,
     TecnologiasComponent,
     ProjetosComponent,
+    ContatosComponent,
   ],
   imports: [
     CommonModule,
