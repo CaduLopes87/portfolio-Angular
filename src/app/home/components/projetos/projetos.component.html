@@ -17,15 +17,28 @@
           </div>
 
           <div class="buttons-bar">
-            <a [href]="projeto.github_Link" target="_blank" class="bar-btn">
+            <a
+              href=""
+              target="_blank"
+              class="bar-btn side-btn"
+              (click)="animarIcone($event, 'fa-bounce', projeto.github_Link)"
+            >
               <i class="fa-brands fa-square-github fa-3x"></i>
             </a>
             <a
-              [href]="projeto.projeto_Link"
-              target="_blank"
-              class="btn bar-btn access-btn"
-              >Acesse</a
+              class="bar-btn large-btn"
+              (click)="animarIcone($event, 'fa-bounce', '')"
             >
+              <i class="fa-solid fa-circle-info"></i>
+            </a>
+            <a
+              [href]=""
+              target="_blank"
+              class="bar-btn side-btn large-btn"
+              (click)="animarIcone($event, 'fa-bounce', projeto.projeto_Link)"
+            >
+              <i class="fa-solid fa-share-from-square"></i>
+            </a>
           </div>
         </article>
         }
@@ -50,15 +63,25 @@
           </div>
 
           <div class="buttons-bar">
-            <a [href]="projeto.github_Link" target="_blank" class="bar-btn">
+            <a
+              [href]=""
+              target="_blank"
+              class="bar-btn side-btn"
+              (click)="animarIcone($event, 'fa-bounce', projeto.github_Link)"
+            >
               <i class="fa-brands fa-square-github fa-3x"></i>
+            </a>
+            <a class="bar-btn large-btn" (click)="animarIcone($event, 'fa-bounce', '')">
+              <i class="fa-solid fa-circle-info"></i>
             </a>
             <a
               [href]="projeto.projeto_Link"
               target="_blank"
-              class="btn bar-btn access-btn"
-              >Acesse</a
+              class="bar-btn side-btn large-btn"
+              (click)="animarIcone($event, 'fa-bounce', projeto.projeto_Link)"
             >
+              <i class="fa-solid fa-share-from-square"></i
+            ></a>
           </div>
         </article>
         }

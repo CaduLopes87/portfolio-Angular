@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IProjetos } from '../../models/IProjetos';
+import { HomeService } from '../../services/home.service';
 
 @Component({
   selector: 'app-projetos',
@@ -30,22 +31,28 @@ export class ProjetosComponent {
         src: '../../../../assets/cult-review-backdrop.png',
         alt: 'Imagem ilustrativa do site Cult Review',
         github_Link: 'https://github.com/CaduLopes87/cult-review',
-        projeto_Link: '../../../../assets/cult-review-backdrop.png',
+        projeto_Link: 'https://cult-review.vercel.app/index.html',
       },
       {
         nome: 'Cult Review',
         src: '../../../../assets/cult-review-backdrop.png',
         alt: 'Imagem ilustrativa do site Cult Review',
         github_Link: 'https://github.com/CaduLopes87/cult-review',
-        projeto_Link: '../../../../assets/cult-review-backdrop.png',
+        projeto_Link: 'https://cult-review.vercel.app/index.html',
       },
       {
         nome: 'Cult Review',
         src: '../../../../assets/cult-review-backdrop.png',
         alt: 'Imagem ilustrativa do site Cult Review',
         github_Link: 'https://github.com/CaduLopes87/cult-review',
-        projeto_Link: '../../../../assets/cult-review-backdrop.png',
+        projeto_Link: 'https://cult-review.vercel.app/index.html',
       },
     ],
   };
+  
+  constructor(private homeService: HomeService) {}
+
+  animarIcone(event: any, animacaoClasse: string, link: string){
+    this.homeService.animarIcone(event, animacaoClasse, link);
+  }
 }
