@@ -8,10 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [HomeModule, BrowserModule, AppRoutingModule],
+  imports: [HomeModule, BrowserModule, AppRoutingModule, MatButtonModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

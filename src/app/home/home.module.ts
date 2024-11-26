@@ -9,6 +9,9 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { ContatosComponent } from './components/contatos/contatos.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DetalhesProjetoComponent } from './components/projetos/components/detalhes-projeto/detalhes-projeto.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { ContatosComponent } from './components/contatos/contatos.component';
     TecnologiasComponent,
     ProjetosComponent,
     ContatosComponent,
+    DetalhesProjetoComponent,
   ],
   imports: [
     CommonModule,
 
     //Bibliotecas externas
     NgxParticlesModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   exports: [HomeComponent],
 })

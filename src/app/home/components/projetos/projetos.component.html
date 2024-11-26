@@ -27,7 +27,7 @@
             </a>
             <a
               class="bar-btn large-btn"
-              (click)="animarIcone($event, 'fa-bounce', '')"
+              (click)="[animarIcone($event, 'fa-bounce', ''), openDialog(projeto)]"
             >
               <i class="fa-solid fa-circle-info"></i>
             </a>
@@ -71,7 +71,12 @@
             >
               <i class="fa-brands fa-square-github fa-3x"></i>
             </a>
-            <a class="bar-btn large-btn" (click)="animarIcone($event, 'fa-bounce', '')">
+            <a
+              class="bar-btn large-btn"
+              (click)="
+                [animarIcone($event, 'fa-bounce', ''), openDialog(projeto)]
+              "
+            >
               <i class="fa-solid fa-circle-info"></i>
             </a>
             <a
