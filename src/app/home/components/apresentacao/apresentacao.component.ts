@@ -7,6 +7,9 @@ import { HomeService } from '../../services/home.service';
   styleUrl: './apresentacao.component.scss',
 })
 export class ApresentacaoComponent {
+  isLkdinHovered = false;
+  isGithubHovered = false;
+
   constructor(private homeService: HomeService) {}
 
   animarIcone(event: any, animacaoClasse: string, redeSocialLink: string = '') {
@@ -20,5 +23,12 @@ export class ApresentacaoComponent {
     link: string = ''
   ) {
     this.homeService.animarBotao(event, botaoId, animacaoClasse, link);
+  }
+
+  rolarParaContato() {
+    const contatoElement = document.getElementById('contact-section');
+    if (contatoElement) {
+      contatoElement.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
