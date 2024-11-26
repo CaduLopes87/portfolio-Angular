@@ -8,9 +8,9 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrl: './detalhes-projeto.component.scss',
 })
 export class DetalhesProjetoComponent {
-  listaContribuicoesTec!: Array<{ texto: string }>;
+  listaContribuicoesTec!: { texto: string }[];
   constructor(@Inject(MAT_DIALOG_DATA) public data: IProjeto) {
-    this.listaContribuicoesTec = data.detalhes.contribuicoesTecnicas;
+    this.listaContribuicoesTec = [...data.detalhes.contribuicoesTecnicas];
     console.log(this.listaContribuicoesTec);
   }
 }

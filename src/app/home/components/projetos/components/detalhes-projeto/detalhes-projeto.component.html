@@ -7,11 +7,13 @@
   <p>{{ data.detalhes.descricao }}</p>
 
   <h3>Contribuições Técnicas:</h3>
-  <div>
+  <ul>
     @for (item of listaContribuicoesTec; track $index) {
-      item.texto
+    <li>
+      {{ item.texto }}
+    </li>
     }
-  </div>
+  </ul>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
