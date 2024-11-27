@@ -176,7 +176,6 @@ export class ProjetosComponent {
 
   openDialog(projeto: IProjeto) {
     const dialogRef = this.dialog.open(DetalhesProjetoComponent, {
-      width: '60vw',
       data: projeto,
     });
 

@@ -1,21 +1,22 @@
-<h2 mat-dialog-title>{{ data.nome }}</h2>
-<mat-dialog-content class="mat-typography">
-  <h3>Objetivo:</h3>
-  <p>{{ data.detalhes.objetivo }}</p>
+<section class="details-section">
+  <h2 mat-dialog-title>{{ data.nome }}</h2>
+  <mat-dialog-content class="mat-typography">
+    <h3>Objetivo:</h3>
+    <p>{{ data.detalhes.objetivo }}</p>
 
-  <h3>Descrição</h3>
-  <p>{{ data.detalhes.descricao }}</p>
+    <h3>Descrição</h3>
+    <p>{{ data.detalhes.descricao }}</p>
 
-  <h3>Contribuições Técnicas:</h3>
-  <ul>
-    @for (item of listaContribuicoesTec; track $index) {
-    <li>
-      {{ item.texto }}
-    </li>
-    }
-  </ul>
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
+    <h3>Contribuições Técnicas:</h3>
+    <ul>
+      @for (item of listaContribuicoesTec; track $index) {
+      <li>
+        {{ item.texto }}
+      </li>
+      }
+    </ul>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Fechar</button>
+  </mat-dialog-actions>
+</section>

@@ -1,0 +1,21 @@
+.details-section {
+  :host {
+    display: block;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: large;
+    font-weight: 600;
+  }
+
+  p {
+    margin-left: 8px;
+  }
+}
