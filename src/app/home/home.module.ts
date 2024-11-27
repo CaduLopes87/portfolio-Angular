@@ -12,6 +12,7 @@ import { ContatosComponent } from './components/contatos/contatos.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DetalhesProjetoComponent } from './components/projetos/components/detalhes-projeto/detalhes-projeto.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { DetalhesProjetoComponent } from './components/projetos/components/detal
     NgxParticlesModule,
     MatButtonModule,
     MatDialogModule,
+    MatIconModule
   ],
   exports: [HomeComponent],
 })

@@ -177,6 +177,10 @@ export class ProjetosComponent {
   openDialog(projeto: IProjeto) {
     const dialogRef = this.dialog.open(DetalhesProjetoComponent, {
       data: projeto,
+      width: '80vw',
+      maxWidth: '1080px',
+      enterAnimationDuration: '1000',
+      panelClass: 'detalhes-dialog'
     });
 
     dialogRef.afterClosed().subscribe((result) => {
