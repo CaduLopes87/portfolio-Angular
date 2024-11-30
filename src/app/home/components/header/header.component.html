@@ -1,15 +1,34 @@
 <div class="header">
-  <a href="" class="bars">
+  <button
+    mat-icon-button
+    class="bars"
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
     <span class="material-symbols-outlined"> menu </span>
-  </a>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="'/sobre'">
+      <i class="fa-solid fa-user"></i>
+      <span>Sobre</span>
+    </button>
+    <button mat-menu-item (click)="rolarParaProjetos($event)">
+      <i class="fa-solid fa-diagram-project"></i>
+      <span> Projetos </span>
+    </button>
+    <button mat-menu-item (click)="rolarParaContato($event)">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <span> Contatos </span>
+    </button>
+  </mat-menu>
   <button class="sun-icon">
     <span class="material-symbols-outlined" title="Tema Claro">
       lens_blur
     </span>
   </button>
   <nav>
-    <a href="">Sobre</a>
-    <a href="">Projetos</a>
-    <a href="">Contatos</a>
+    <a href="" [routerLink]="'/sobre'">Sobre</a>
+    <a href="" (click)="rolarParaProjetos($event)">Projetos</a>
+    <a href="" (click)="rolarParaContato($event)">Contatos</a>
   </nav>
 </div>

@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DetalhesProjetoComponent } from './components/projetos/components/detalhes-projeto/detalhes-projeto.component';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { MatIconModule } from '@angular/material/icon';
   ],
   imports: [
     CommonModule,
+    RouterModule,
 
     //Bibliotecas externas
     NgxParticlesModule,
     MatButtonModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ],
-  exports: [HomeComponent],
+  exports: [HomeComponent, BackgroungParticlesComponent, HeaderComponent],
 })
 export class HomeModule {}
