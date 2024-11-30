@@ -180,11 +180,9 @@ export class ProjetosComponent {
       width: '80vw',
       maxWidth: '1080px',
       enterAnimationDuration: '1000',
-      panelClass: 'detalhes-dialog'
+      panelClass: 'detalhes-dialog',
     });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
+    dialogRef.afterClosed().subscribe((result) => {});
   }
 }
