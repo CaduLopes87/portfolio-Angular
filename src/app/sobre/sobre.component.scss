@@ -1,85 +1,77 @@
+.hidden {
+  display: none;
+}
+
 .fundo-chuva {
-  position: absolute;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: -9;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.body {
+  padding-top: 24px;
+  padding-bottom: 500px; //retirar depois
 
-  padding: 0 16px;
-  //   color: var(--text-primary);
-  overflow: hidden;
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  .main-card {
-    position: relative;
+    // padding: 0 16px;
+    overflow: hidden;
 
-    mat-card-content {
-      padding-top: 8px;
+    .main-card {
+      position: relative;
+      width: 85%;
 
-      mat-accordion {
-        width: 100%;
-      }
+      mat-card-content {
+        padding: 0;
 
-      p {
-        margin-top: 8px;
-      }
-    }
+        mat-accordion {
+          mat-expansion-panel {
+            mat-expansion-panel-header {
+              padding-left: 12px;
 
-    .home-btn {
-      position: absolute;
-      top: 20px;
-      right: 0;
-      align-self: flex-end;
-      background-color: transparent;
-      border: none;
-      width: 48px;
+              mat-panel-title {
+                font-family: "Roboto";
+                font-weight: 500;
+              }
+            }
 
-      i {
-        background-color: none;
-        // color: var(--text-primary);
-        font-size: x-large;
-      }
-    }
-
-    .title {
-      text-align: center;
-    }
-
-    .img-text {
-      p {
-        img {
-          float: left;
-          margin-right: 12px;
-          width: 150px;
-          border-radius: 8px;
+            p {
+              margin-top: 8px;
+            }
+          }
         }
       }
 
-      // display: inline-block;
+      .home-btn {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        align-self: flex-end;
+        background-color: transparent;
+        border: none;
+        width: 48px;
+
+        i {
+          background-color: none;
+          font-size: x-large;
+        }
+      }
     }
-  }
 
-  @media (min-width: 768px) {
-    .title-line {
-      display: flex;
-      align-items: center;
-      width: 100%;
-    }
+    @media (min-width: 768px) {
+      padding-top: 48px;
 
-    .title {
-      margin: 0;
-    }
-
-    .line {
-      margin-left: 32px;
-      height: 1px;
-
-      width: 70%;
-      background-color: var(--tertiary-color);
+      .main-card {
+        width: 50vw;
+        max-width: 700px;
+      }
     }
   }
 }
