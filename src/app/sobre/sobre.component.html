@@ -10,7 +10,7 @@
         <img
           mat-card-avatar
           src="../../assets/foto-perfil.jpeg"
-          alt="Photo of a Shiba Inu"
+          alt="Foto de Perfil do Desenvolvedor Cadu"
         />
         <mat-card-title>Cadu_Lopes</mat-card-title>
         <mat-card-subtitle>Sobre mim</mat-card-subtitle>
@@ -18,11 +18,11 @@
       <img
         mat-card-image
         src="../../../../assets/foto-perfil-2.jpg"
-        alt="Photo of a Shiba Inu"
+        alt="Post do Desenvolvedor Cadu"
       />
       <mat-card-content>
         <mat-accordion>
-          <mat-expansion-panel hideToggle>
+          <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>Descrição</mat-panel-title>
             </mat-expansion-panel-header>
@@ -62,9 +62,12 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-button (click)="animarMeteoros()">LIKE</button>
-        <button mat-button>SHARE</button>
       </mat-card-actions>
     </mat-card>
+  </div>
+
+  <div class="timeline">
+    <app-linha-do-tempo></app-linha-do-tempo>
   </div>
 </section>
 <canvas #meteorCanvas class="fundo-chuva" id="meteorCanvas"></canvas>

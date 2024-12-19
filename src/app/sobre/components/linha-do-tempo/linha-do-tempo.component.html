@@ -1,0 +1,17 @@
+<div class="timeline-container">
+  <h1>Trajetória como desenvolvedor</h1>
+  <div class="timeline">
+    @for (evento of eventos; track $index) {
+    <div class="timeline-item">
+      <div class="event">
+        <div class="event-icon">
+          <i class="{{ evento.iconeClasse }}"></i>
+          <span class="first-text"> {{ evento.data }} </span>
+          <span class="second-text"> {{ evento.resumo }} </span>
+        </div>
+        <div class="{{ evento.mostrarLinha ? 'line' : '' }}"></div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
