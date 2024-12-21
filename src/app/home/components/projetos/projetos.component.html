@@ -22,12 +22,18 @@
               target="_blank"
               class="bar-btn side-btn"
               (click)="animarIcone($event, 'fa-bounce', projeto.github_Link)"
+              matTooltip="Repositório do Projeto"
+              matTooltipPosition="above"
             >
               <i class="fa-brands fa-square-github fa-3x"></i>
             </a>
             <a
               class="bar-btn large-btn"
-              (click)="[animarIcone($event, 'fa-bounce', ''), openDialog(projeto)]"
+              (click)="
+                [animarIcone($event, 'fa-bounce', ''), openDialog(projeto)]
+              "
+              matTooltip="Detalhes do Projeto"
+              matTooltipPosition="above"
             >
               <i class="fa-solid fa-circle-info"></i>
             </a>
@@ -36,6 +42,8 @@
               target="_blank"
               class="bar-btn side-btn large-btn"
               (click)="animarIcone($event, 'fa-bounce', projeto.projeto_Link)"
+              matTooltip="Site do Projeto"
+              matTooltipPosition="above"
             >
               <i class="fa-solid fa-share-from-square"></i>
             </a>
@@ -68,6 +76,8 @@
               target="_blank"
               class="bar-btn side-btn"
               (click)="animarIcone($event, 'fa-bounce', projeto.github_Link)"
+              matTooltip="Repositório do Projeto"
+              matTooltipPosition="above"
             >
               <i class="fa-brands fa-square-github fa-3x"></i>
             </a>
@@ -76,6 +86,8 @@
               (click)="
                 [animarIcone($event, 'fa-bounce', ''), openDialog(projeto)]
               "
+              matTooltip="Detalhes do Projeto"
+              matTooltipPosition="above"
             >
               <i class="fa-solid fa-circle-info"></i>
             </a>
@@ -84,6 +96,8 @@
               target="_blank"
               class="bar-btn side-btn large-btn"
               (click)="animarIcone($event, 'fa-bounce', projeto.projeto_Link)"
+              matTooltip="Site do Projeto"
+              matTooltipPosition="above"
             >
               <i class="fa-solid fa-share-from-square"></i
             ></a>
