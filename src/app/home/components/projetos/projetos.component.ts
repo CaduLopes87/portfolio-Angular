@@ -103,68 +103,68 @@ export class ProjetosComponent {
           ],
         },
       },
-      {
-        nome: 'Cult Review',
-        src: '../../../../assets/cult-review-backdrop.png',
-        alt: 'Imagem ilustrativa do site Cult Review',
-        github_Link: 'https://github.com/CaduLopes87/cult-review',
-        projeto_Link: 'https://cult-review.vercel.app/index.html',
-        detalhes: {
-          objetivo:
-            'Explorar o consumo de APIs externas e aprimorar habilidades em desenvolvimento web através da criação de um catálogo interativo voltado ao cinema.',
-          descricao:
-            'O CultReview é um projeto pessoal que reflete a paixão por cinema, criado como um laboratório prático para explorar o consumo de APIs. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite que os usuários pesquisem informações sobre filmes, incluindo sinopses, notas de avaliação e outros dados relacionados. O design minimalista foi escolhido para enfatizar o conteúdo, enquanto a integração com APIs externas permitiu a criação de um catálogo dinâmico e funcional.',
-          contribuicoesTecnicas: [
-            {
-              texto:
-                'Desenvolvimento do front-end utilizando HTML, CSS e JS puro.',
-            },
-            {
-              texto:
-                'Integração com APIs públicas para busca e exibição de informações em tempo real.',
-            },
-            {
-              texto:
-                'Projeto orientado a responsividade, garantindo boa experiência em dispositivos móveis e desktops.',
-            },
-            {
-              texto:
-                'Organização do código e boas práticas para facilitar futuras manutenções e extensões.',
-            },
-          ],
-        },
-      },
-      {
-        nome: 'Cult Review',
-        src: '../../../../assets/cult-review-backdrop.png',
-        alt: 'Imagem ilustrativa do site Cult Review',
-        github_Link: 'https://github.com/CaduLopes87/cult-review',
-        projeto_Link: 'https://cult-review.vercel.app/index.html',
-        detalhes: {
-          objetivo:
-            'Explorar o consumo de APIs externas e aprimorar habilidades em desenvolvimento web através da criação de um catálogo interativo voltado ao cinema.',
-          descricao:
-            'O CultReview é um projeto pessoal que reflete a paixão por cinema, criado como um laboratório prático para explorar o consumo de APIs. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite que os usuários pesquisem informações sobre filmes, incluindo sinopses, notas de avaliação e outros dados relacionados. O design minimalista foi escolhido para enfatizar o conteúdo, enquanto a integração com APIs externas permitiu a criação de um catálogo dinâmico e funcional.',
-          contribuicoesTecnicas: [
-            {
-              texto:
-                'Desenvolvimento do front-end utilizando HTML, CSS e JS puro.',
-            },
-            {
-              texto:
-                'Integração com APIs públicas para busca e exibição de informações em tempo real.',
-            },
-            {
-              texto:
-                'Projeto orientado a responsividade, garantindo boa experiência em dispositivos móveis e desktops.',
-            },
-            {
-              texto:
-                'Organização do código e boas práticas para facilitar futuras manutenções e extensões.',
-            },
-          ],
-        },
-      },
+      // {
+      //   nome: 'Cult Review',
+      //   src: '../../../../assets/cult-review-backdrop.png',
+      //   alt: 'Imagem ilustrativa do site Cult Review',
+      //   github_Link: 'https://github.com/CaduLopes87/cult-review',
+      //   projeto_Link: 'https://cult-review.vercel.app/index.html',
+      //   detalhes: {
+      //     objetivo:
+      //       'Explorar o consumo de APIs externas e aprimorar habilidades em desenvolvimento web através da criação de um catálogo interativo voltado ao cinema.',
+      //     descricao:
+      //       'O CultReview é um projeto pessoal que reflete a paixão por cinema, criado como um laboratório prático para explorar o consumo de APIs. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite que os usuários pesquisem informações sobre filmes, incluindo sinopses, notas de avaliação e outros dados relacionados. O design minimalista foi escolhido para enfatizar o conteúdo, enquanto a integração com APIs externas permitiu a criação de um catálogo dinâmico e funcional.',
+      //     contribuicoesTecnicas: [
+      //       {
+      //         texto:
+      //           'Desenvolvimento do front-end utilizando HTML, CSS e JS puro.',
+      //       },
+      //       {
+      //         texto:
+      //           'Integração com APIs públicas para busca e exibição de informações em tempo real.',
+      //       },
+      //       {
+      //         texto:
+      //           'Projeto orientado a responsividade, garantindo boa experiência em dispositivos móveis e desktops.',
+      //       },
+      //       {
+      //         texto:
+      //           'Organização do código e boas práticas para facilitar futuras manutenções e extensões.',
+      //       },
+      //     ],
+      //   },
+      // },
+      // {
+      //   nome: 'Cult Review',
+      //   src: '../../../../assets/cult-review-backdrop.png',
+      //   alt: 'Imagem ilustrativa do site Cult Review',
+      //   github_Link: 'https://github.com/CaduLopes87/cult-review',
+      //   projeto_Link: 'https://cult-review.vercel.app/index.html',
+      //   detalhes: {
+      //     objetivo:
+      //       'Explorar o consumo de APIs externas e aprimorar habilidades em desenvolvimento web através da criação de um catálogo interativo voltado ao cinema.',
+      //     descricao:
+      //       'O CultReview é um projeto pessoal que reflete a paixão por cinema, criado como um laboratório prático para explorar o consumo de APIs. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite que os usuários pesquisem informações sobre filmes, incluindo sinopses, notas de avaliação e outros dados relacionados. O design minimalista foi escolhido para enfatizar o conteúdo, enquanto a integração com APIs externas permitiu a criação de um catálogo dinâmico e funcional.',
+      //     contribuicoesTecnicas: [
+      //       {
+      //         texto:
+      //           'Desenvolvimento do front-end utilizando HTML, CSS e JS puro.',
+      //       },
+      //       {
+      //         texto:
+      //           'Integração com APIs públicas para busca e exibição de informações em tempo real.',
+      //       },
+      //       {
+      //         texto:
+      //           'Projeto orientado a responsividade, garantindo boa experiência em dispositivos móveis e desktops.',
+      //       },
+      //       {
+      //         texto:
+      //           'Organização do código e boas práticas para facilitar futuras manutenções e extensões.',
+      //       },
+      //     ],
+      //   },
+      // },
     ],
   };
 

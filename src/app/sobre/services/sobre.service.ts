@@ -33,12 +33,16 @@ export class SobreService {
       mostrarLinha: true,
       data: '2018',
       resumo: 'Ingresso na faculdade',
+      descricao:
+        'Encontrei no Intituto Federal de Brasília a melhor opção para a faculdade por já ter feito o ensino médio neste mesmo instituto e conhecer a qualidade. Assim inciei o curso de Automação Industrial, o qual foca em automação de processos, incluindo desenvolvimento de software e hardware.',
     },
     {
       iconeClasse: 'fa-solid fa-diagram-project',
       mostrarLinha: true,
       data: '2020',
       resumo: 'Projetos Acadêmicos',
+      descricao:
+        'Durante o andamento do curso, participei de diversos tipos de projetos acadêmicos e trabalhos voluntários. Por meio deles pude obter e aplicar uma ampla base de conhecimentos como linguagens as C++, Python e os microcontroladores Arduino, ESP32 e Raspberry',
     },
     {
       iconeClasse: 'fa-solid fa-city',
