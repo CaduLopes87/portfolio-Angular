@@ -1,4 +1,4 @@
-export interface IEventos {
+export interface IEvento {
   iconeClasse: string;
   mostrarLinha: boolean;
   data: string;

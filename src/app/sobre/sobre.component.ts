@@ -1,5 +1,8 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { warn } from 'node:console';
+import { SobreService } from './services/sobre.service';
+import { IDetalheEventoObservable } from './models/IDetalheEventoObservable';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-sobre',
@@ -15,11 +18,32 @@ export class SobreComponent implements AfterViewInit {
   quantidadeMeteoros = 1;
   ativarAnimacao = false;
 
+  detalheEvento: IDetalheEventoObservable = {
+    mostrarDetalheEvento: false,
+    eventoSelecionado: {
+      iconeClasse: '',
+      mostrarLinha: false,
+      data: '',
+      resumo: '',
+    },
+  };
+
+  subscriptions: Subscription[] = [];
+
+  constructor(private sobreService: SobreService) {}
+
   ngAfterViewInit(): void {
     const canvas = this.canvasRef.nativeElement;
     this.ctx = canvas.getContext('2d');
 
     this.larguraMeteoro = window.innerWidth >= 768 ? 0.5 : 1;
+
+    const detalheEventoSubscription =
+      this.sobreService.detalheEvento$.subscribe((detalhe) => {
+        if(detalhe) {
+          this.detalheEvento = detalhe;
+        }
+      });
   }
 
   drawMeteoro(x: number, y: number) {
@@ -45,7 +69,7 @@ export class SobreComponent implements AfterViewInit {
         (Math.random() * this.quantidadeMeteoros).toFixed(0)
       );
 
-      if(qtdMeteoros > 0) {
+      if (qtdMeteoros > 0) {
         this.drawMeteoro(
           Math.random() * canvas.width,
           Math.random() * canvas.height

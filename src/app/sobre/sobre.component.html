@@ -54,7 +54,7 @@
               Express e PostgreSQL no backend, desenvolvendo soluções completas
               e integradas. Sempre priorizo entregar produtos finais que não
               apenas atendam às expectativas técnicas, mas que sejam visualmente
-              agradáveis, responsivos e funcionais em diversas plataformas e
+              agradáveis, respon sivos e funcionais em diversas plataformas e
               dispositivos.
             </p>
           </mat-expansion-panel>
@@ -68,6 +68,25 @@
 
   <div class="timeline">
     <app-linha-do-tempo></app-linha-do-tempo>
+    @if(detalheEvento.mostrarDetalheEvento &&
+    detalheEvento.eventoSelecionado.resumo){
+    <mat-card class="event-detail" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{
+            detalheEvento.eventoSelecionado.resumo
+          }}</mat-card-title>
+          <mat-card-subtitle>
+            {{ detalheEvento.eventoSelecionado.data }}
+          </mat-card-subtitle>
+          <i class="{{ detalheEvento.eventoSelecionado.iconeClasse }}"></i>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        {{ detalheEvento.eventoSelecionado.descricao }}
+      </mat-card-content>
+    </mat-card>
+    }
   </div>
 </section>
 <canvas #meteorCanvas class="fundo-chuva" id="meteorCanvas"></canvas>

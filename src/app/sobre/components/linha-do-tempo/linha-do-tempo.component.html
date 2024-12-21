@@ -4,7 +4,7 @@
     @for (evento of eventos; track $index) {
     <div class="timeline-item">
       <div class="event">
-        <div class="event-icon">
+        <div class="event-icon" (click)="mostrarDetalhe(evento)">
           <i class="{{ evento.iconeClasse }}"></i>
           <span class="first-text"> {{ evento.data }} </span>
           <span class="second-text"> {{ evento.resumo }} </span>

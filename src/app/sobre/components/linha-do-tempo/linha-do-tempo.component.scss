@@ -13,6 +13,10 @@
     display: flex;
     padding-bottom: 32px;
     overflow-x: auto;
+    scrollbar-width: none;
+    padding-top: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
 
     .timeline-item {
       .event {
@@ -26,13 +30,13 @@
           align-items: center;
           gap: 4px;
           width: 108px;
+          margin-top: 4px;
+
+          cursor: pointer;
 
           i {
             font-size: 40px;
             height: 50px;
-            margin-left: 4px;
-            margin-right: 4px;
-            padding-top: 4px;
           }
 
           .first-text {
@@ -55,6 +59,20 @@
           border-radius: 4px;
         }
       }
+    }
+
+    .event-icon:hover {
+      scale: 1.15;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 40vw;
+    max-width: 950px;
+    margin-top: 96px;
+
+    .timeline {
+      scrollbar-width: thin;
     }
   }
 }
