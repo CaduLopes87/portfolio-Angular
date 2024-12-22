@@ -5,7 +5,7 @@ import { HomeComponent } from './home.component';
 import { NgxParticlesModule } from '@tsparticles/angular';
 import { HeaderComponent } from './components/header/header.component';
 import { ApresentacaoComponent } from './components/apresentacao/apresentacao.component';
-import { SobreComponent } from './components/sobre/sobre.component';
+import { SobreComponent } from './components/sobre-descricao/sobre-descricao.component';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { ContatosComponent } from './components/contatos/contatos.component';
@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule} from '@angular/material/tooltip';
+import { EnviarDialogComponent } from './components/contatos/enviar-dialog/enviar-dialog.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatTooltipModule} from '@angular/material/tooltip';
     ProjetosComponent,
     ContatosComponent,
     DetalhesProjetoComponent,
+    EnviarDialogComponent,
   ],
   imports: [
     CommonModule,
