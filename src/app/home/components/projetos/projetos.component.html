@@ -45,7 +45,10 @@
               matTooltip="Site do Projeto"
               matTooltipPosition="above"
             >
-              <i class="fa-solid fa-share-from-square"></i>
+              <i
+                class="fa-solid fa-share-from-square"
+                [ngClass]="!projeto.projeto_Link ? 'disabled' : ''"
+              ></i>
             </a>
           </div>
         </article>

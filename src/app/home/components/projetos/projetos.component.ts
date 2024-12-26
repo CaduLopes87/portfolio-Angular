@@ -70,6 +70,127 @@ export class ProjetosComponent {
           ],
         },
       },
+      {
+        nome: 'Painel de Consolidação Financeira',
+        src: '../../../../assets/BB-backdrop.png',
+        alt: 'Imagem ilustrativa da aplicação desenvolvida no Banco do Brasil para Consolidação Financeira',
+        github_Link: 'https://github.com/CaduLopes87/cult-review',
+        projeto_Link: '',
+        detalhes: {
+          objetivo:
+            'Concentrar as informações das operações de mercado.',
+          descricao:
+            'Interface desenvolvida para consolidar informações de operações financeiras realizadas em ambiente de mercado, com funcionalidade para exportação de relatórios diários.',
+          contribuicoesTecnicas: [
+            {
+              texto:
+                'Desenvolvimento do front-end utilizando Angular.',
+            },
+            {
+              texto:
+                'Integração eficiente de requisições com o backend por meio de serviços otimizados para comunicação com banco de dados.',
+            },
+            {
+              texto:
+                'Desenvolvimento de formulários dinâmicos para a criação e edição de operações, utilizando Reactive Forms no Angular.',
+            },
+            {
+              texto:
+                'Uso de lazy loading para otimizar o carregamento da aplicação e melhorar a experiência do usuário.',
+            },
+            {
+              texto:
+                'Uso de lazy loading para otimizar o carregamento da aplicação e melhorar a experiência do usuário.',
+            },
+            {
+              texto:
+                'Implementação de testes unitários utilizando o Jasmine e Karma.',
+            },
+          ],
+        },
+      },
+      {
+        nome: 'Painel de Gerenciamento Operacional',
+        src: '../../../../assets/BB-backdrop.png',
+        alt: 'Imagem ilustrativa da aplicação desenvolvida no Banco do Brasil para Gerenciamento Operacional',
+        github_Link: 'https://github.com/CaduLopes87/cult-review',
+        projeto_Link: '',
+        detalhes: {
+          objetivo:
+            'Planejar as operações que serão relizadas no dia.',
+          descricao:
+            'Ferramenta desenvolvida para gestores planejarem e ajustarem estratégias operacionais, centralizando o controle das operações financeiras do dia.',
+          contribuicoesTecnicas: [
+            {
+              texto:
+                'Desenvolvimento do front-end utilizando Angular.',
+            },
+            {
+              texto:
+                'Integração eficiente de requisições com o backend por meio de serviços otimizados para comunicação com banco de dados.',
+            },
+            {
+              texto:
+                'Desenvolvimento de formulários dinâmicos para a criação e edição de operações, utilizando Reactive Forms no Angular.',
+            },
+            {
+              texto:
+                'Uso de lazy loading para otimizar o carregamento da aplicação e melhorar a experiência do usuário.',
+            },
+            {
+              texto:
+                'Uso de lazy loading para otimizar o carregamento da aplicação e melhorar a experiência do usuário.',
+            },
+            {
+              texto:
+                'Implementação de testes unitários utilizando o Jasmine e Karma.',
+            },
+          ],
+        },
+      },
+      {
+        nome: 'Painel de Execução de Transações',
+        src: '../../../../assets/BB-backdrop.png',
+        alt: 'Imagem ilustrativa da aplicação desenvolvida no Banco do Brasil para Execução de Transações',
+        github_Link: 'https://github.com/CaduLopes87/cult-review',
+        projeto_Link: '',
+        detalhes: {
+          objetivo:
+            'Executar as operações de compra e venda.',
+          descricao:
+            'Plataforma para execução de operações financeiras integrada diretamente aos sistemas de mercado, permitindo transações de compra e venda de ativos conforme os critérios definidos pela gestão.',
+          contribuicoesTecnicas: [
+            {
+              texto:
+                'Desenvolvimento do front-end utilizando Angular.',
+            },
+            {
+              texto:
+                'Implementação de serviços de integração em tempo real com a bolsa de valores, garantindo sincronização e confiabilidade das transações.',
+            },
+            {
+              texto:
+                'Integração eficiente de requisições com o backend por meio de serviços otimizados para comunicação com banco de dados.',
+            },
+            {
+              texto:
+                'Desenvolvimento de formulários dinâmicos para a criação e edição de operações, utilizando Reactive Forms no Angular.',
+            },
+            {
+              texto:
+                'Uso de lazy loading para otimizar o carregamento da aplicação e melhorar a experiência do usuário.',
+            },
+            {
+              texto:
+                'Uso de lazy loading para otimizar o carregamento da aplicação e melhorar a experiência do usuário.',
+            },
+            {
+              texto:
+                'Implementação de testes unitários utilizando o Jasmine e Karma.',
+            },
+          ],
+        },
+      },
     ],
     pessoais: [
       {
@@ -103,68 +224,6 @@ export class ProjetosComponent {
           ],
         },
       },
-      // {
-      //   nome: 'Cult Review',
-      //   src: '../../../../assets/cult-review-backdrop.png',
-      //   alt: 'Imagem ilustrativa do site Cult Review',
-      //   github_Link: 'https://github.com/CaduLopes87/cult-review',
-      //   projeto_Link: 'https://cult-review.vercel.app/index.html',
-      //   detalhes: {
-      //     objetivo:
-      //       'Explorar o consumo de APIs externas e aprimorar habilidades em desenvolvimento web através da criação de um catálogo interativo voltado ao cinema.',
-      //     descricao:
-      //       'O CultReview é um projeto pessoal que reflete a paixão por cinema, criado como um laboratório prático para explorar o consumo de APIs. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite que os usuários pesquisem informações sobre filmes, incluindo sinopses, notas de avaliação e outros dados relacionados. O design minimalista foi escolhido para enfatizar o conteúdo, enquanto a integração com APIs externas permitiu a criação de um catálogo dinâmico e funcional.',
-      //     contribuicoesTecnicas: [
-      //       {
-      //         texto:
-      //           'Desenvolvimento do front-end utilizando HTML, CSS e JS puro.',
-      //       },
-      //       {
-      //         texto:
-      //           'Integração com APIs públicas para busca e exibição de informações em tempo real.',
-      //       },
-      //       {
-      //         texto:
-      //           'Projeto orientado a responsividade, garantindo boa experiência em dispositivos móveis e desktops.',
-      //       },
-      //       {
-      //         texto:
-      //           'Organização do código e boas práticas para facilitar futuras manutenções e extensões.',
-      //       },
-      //     ],
-      //   },
-      // },
-      // {
-      //   nome: 'Cult Review',
-      //   src: '../../../../assets/cult-review-backdrop.png',
-      //   alt: 'Imagem ilustrativa do site Cult Review',
-      //   github_Link: 'https://github.com/CaduLopes87/cult-review',
-      //   projeto_Link: 'https://cult-review.vercel.app/index.html',
-      //   detalhes: {
-      //     objetivo:
-      //       'Explorar o consumo de APIs externas e aprimorar habilidades em desenvolvimento web através da criação de um catálogo interativo voltado ao cinema.',
-      //     descricao:
-      //       'O CultReview é um projeto pessoal que reflete a paixão por cinema, criado como um laboratório prático para explorar o consumo de APIs. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite que os usuários pesquisem informações sobre filmes, incluindo sinopses, notas de avaliação e outros dados relacionados. O design minimalista foi escolhido para enfatizar o conteúdo, enquanto a integração com APIs externas permitiu a criação de um catálogo dinâmico e funcional.',
-      //     contribuicoesTecnicas: [
-      //       {
-      //         texto:
-      //           'Desenvolvimento do front-end utilizando HTML, CSS e JS puro.',
-      //       },
-      //       {
-      //         texto:
-      //           'Integração com APIs públicas para busca e exibição de informações em tempo real.',
-      //       },
-      //       {
-      //         texto:
-      //           'Projeto orientado a responsividade, garantindo boa experiência em dispositivos móveis e desktops.',
-      //       },
-      //       {
-      //         texto:
-      //           'Organização do código e boas práticas para facilitar futuras manutenções e extensões.',
-      //       },
-      //     ],
-      //   },
-      // },
     ],
   };
 

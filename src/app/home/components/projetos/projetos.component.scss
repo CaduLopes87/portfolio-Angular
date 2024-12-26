@@ -94,7 +94,6 @@
         text-decoration: none;
 
         i {
-          color: var(--tertiary-color);
           color: var(--text-primary);
           font-size: 32px;
         }
@@ -107,11 +106,6 @@
       .large-btn {
         i {
           font-size: 28px;
-        }
-      }
-
-      .side-btn {
-        i {
         }
       }
     }
@@ -190,4 +184,8 @@
       transform: scale(1.2);
     }
   }
+}
+
+.disabled {
+  color: rgba(255, 255, 255, 0.303) !important;
 }
